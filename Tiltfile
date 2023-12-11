@@ -1,6 +1,6 @@
 LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
 NAMESPACE = os.getenv("NAMESPACE", default='default')
-allow_k8s_contexts('tap-on-azure')
+allow_k8s_contexts('tap-full')
 
 k8s_custom_deploy(
     'tanzu-java-web-app',
