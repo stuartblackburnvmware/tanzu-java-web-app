@@ -27,7 +27,7 @@ spec:
       secret-name: ado-token
       org-name: blackburns0681
       pipeline-id: 4
-      pipeline-params: "{\"newparam\": \"testing\"}"
+#      pipeline-params: "{\"newparam\": \"testing\"}"
   source:
     git:
       url: https://github.com/stuartblackburnvmware/tanzu-java-web-app
