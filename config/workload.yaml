@@ -19,7 +19,15 @@ spec:
   - name: testing_pipeline_matching_labels
     value:
 #      apps.tanzu.vmware.com/pipeline: test
-      apps.tanzu.vmware.com/language: java
+#      apps.tanzu.vmware.com/language: java
+      apps.tanzu.vmware.com/pipeline: ado-pipeline
+  - name: testing_pipeline_params
+    value:
+      project-name: tap
+      secret-name: ado-token
+      org-name: blackburns0681
+      pipeline-id: 4
+      pipeline-params: "{\"newparam\": \"testing\"}"
   source:
     git:
       url: https://github.com/stuartblackburnvmware/tanzu-java-web-app
